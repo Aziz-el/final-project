@@ -141,7 +141,7 @@
     }
     .menu>div{
         margin-inline: auto;
-        max-width: 90vw;
+        max-width: 87vw;
     }
 }
 @media (max-width :380px) {
