@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body class="bg-[#faf9f9]">
+    <header>
+        <div class="container1 max-w-[1500px] mx-auto">
+             <div class="header flex justify-between items-center p-5">
+                    <div class="logoAndName flex gap-[15px]">
+                        <img src="./images/logo.svg" alt="" class="w-[30px]">
+                        <h1 class="text-[23px] font-semibold">Ресторан</h1>
+                    </div>
+                    <div class="iconcs flex gap-3">
+                        <img src="./images/favorite.png" alt="" class="fav w-[30px]" id="btnForFav">
+                        <img src="./images/search.svg" alt=""class="w-[30px]" id="btnForSearch">
+                    </div>
+             </div>
+             <div class="search w-auto px-5 " id="Search">
+                <form action="" id="formForSearch">
+                    <input type="text" name="Text" id="inputForSearch" placeholder="Поиск" class="w-[100%] bg-[#FBF0ED] h-[60px] rounded-lg pl-5 outline-none" >
+                </form>
+             </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container1 max-w-[1500px] mx-auto">
+            <div class="categories flex p-6 justify-between overflow-hidden" id="categories">
+            </div>
+            <div class="menu p-5 " id="menu">
+            </div>
+        </div>
+    </main>
+    <div id="favorite-model" class=" fixed min-h-screen  w-full justify-center items-center flex justify-center">
+  <div class="ddd my-auto mx-auto bg-white p-[30px] border-black border-[1px] relative rounded-2xl overflow-hidden pt-[30px]" id="favs"
+>
+</div>
+<div class=" absolute close rounded-3xl bg-red-500 flex justify-center items-center w-[35px] text-center py-1 text-[#FFFFFF] text-[20px] top-3 right-3" id="closeFavModal">
+    x
+</div>
+    <script src="./manifest.js"></script>
+</body>
+</html>
