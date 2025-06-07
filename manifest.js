@@ -51,7 +51,7 @@ function CreateAndAddCategoriesAndFoods(data) {
                 let food = `
                 <div class="food w-[350px] h-[400px] flex flex-col items-start bg-[#FFFFFF] rounded-3xl gap-2" id = "food${f.id}">
                             <div class="imageForfood w-[350px] h-[250px] overflow-hidden relative rounded-tl-3xl rounded-tr-3xl">
-                                <img src="./images/e5e0d85874391a5b08eba095172f59981c5ce20e.png" alt="" class="absolute bottom-[-40px]">
+                                <img src="${f.img}" style="width: 100%; height: 100%;" alt="" >
                             </div>
                             <h1 class="ml-5 font-bold text-[17px]">${f.name}</h1>
                             <span class="ml-5 text-[14px] text-[#A6A6A6]"><span>${f.mass} гр.</span> | <span>${f.kalories} ккал</span></span>
@@ -118,7 +118,7 @@ function Update(searching,data) {
                 let food = `
                 <div class="food w-[350px] h-[400px] flex flex-col items-start bg-[#FFFFFF] rounded-3xl gap-2" id = "food${f.id}">
                             <div class="imageForfood w-[350px] h-[250px] overflow-hidden relative rounded-tl-3xl rounded-tr-3xl">
-                                <img src="./images/e5e0d85874391a5b08eba095172f59981c5ce20e.png" alt="" class="absolute bottom-[-40px]">
+                                <img src="${f.img}" alt="" class="absolute bottom-[-40px]">
                             </div>
                             <h1 class="ml-5 font-bold text-[17px]">${f.name}</h1>
                             <span class="ml-5 text-[14px] text-[#A6A6A6]"><span>${f.mass} гр.</span> | <span>${f.kalories} ккал</span></span>
@@ -191,7 +191,7 @@ function ViewsFav(data) {
                 <div class="foodfav h-[100px] max-w-[800px] flex items-center justify-between bg-[#FFFFFF] rounded-3xl gap-2" id = "foodFav${f.id}">
                             <div class="flex items-center">
                             <div class="imageForfoodfav w-[100px] h-[100px] overflow-hidden relative rounded-bl-xl rounded-tl-xl">
-                                <img src="./images/e5e0d85874391a5b08eba095172f59981c5ce20e.png" alt="" class="absolute bottom-[-40px]">
+                                <img src="${f.img}" alt="" class="absolute bottom-[-40px]">
                             </div>
                             <div class="flex flex-col gap-4">
                                     <h1 class="ml-5 font-bold text-[15px]">${f.name}</h1>
@@ -247,7 +247,7 @@ function details(id,data){
     <div class="fixed inset-0  bg-opacity-40 backdrop-blur-sm flex items-center justify-center z-50" id="detailModal">
     <div class=" w-[700px] h-[600px] bg-white rounded-3xl shadow-xl p-6 flex flex-col gap-4">
     <div class="w-full h-[300px] overflow-hidden rounded-3xl">
-    <img src="./images/e5e0d85874391a5b08eba095172f59981c5ce20e.png" class="w-full h-full object-cover">
+    <img src="${f.img}" class="w-full h-full object-cover">
   </div>
   <div class="flex justify-between items-center">
     <h1 class="text-3xl font-bold text-[#333]">${food.name}</h1>

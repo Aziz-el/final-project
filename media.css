@@ -83,7 +83,7 @@
     }
     #favorite-model>.ddd{
         min-width: 800px;
-        max-height: 500px;
+        min-height: 500px;
         overflow-y: scroll;
     }
 }
@@ -137,11 +137,11 @@
         height: 40px;
     }
     .ddd{
-        min-height: 630px
+        min-height: 80vw
     }
     .menu>div{
         margin-inline: auto;
-        max-width: 87vw;
+        max-width: 85vw;
     }
 }
 @media (max-width :380px) {
